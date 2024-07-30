@@ -4,7 +4,7 @@ import { assets } from '../../../public/gemini-clone-assets/assets/assets'
 function Main() {
   return (
     <>
-    <div className='main '>
+    <div className='main special'>
   <div className='nav'>
         <p>Gemini</p>
         <img src={assets.user_icon}/>
@@ -34,6 +34,23 @@ function Main() {
             <img src={assets.code_icon}/>
      
     </div></div>
+
+    <div className='main-bottom'>
+<div className='search-box'>
+<input placeholder='enter a prompt here' type='text'/>
+<div>
+  <img src={assets.gemini_icon}/>
+  <img src={assets.mic_icon}/>
+  <img src={assets.send_icon}/>
+</div>
+
+</div>
+<div>
+  <p className='bottom-info'>
+Gemini may display inaccurate ifo, includeing about people about people, so doule-check its response. your privacy and Gemini Apps.
+  </p>
+</div>
+    </div>
   </div>
     </div></>
   )
